@@ -1,0 +1,58 @@
+/* Typography */
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	color: black;
+}
+
+.heading-xl {
+	font-weight: 700;
+	font-size: 200px;
+	line-height: 200px;
+	letter-spacing: -5px;
+}
+
+.heading-l {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 68px;
+	color: var(--c-dark-grey);
+}
+
+.heading-m {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 4.8px;
+	text-transform: uppercase;
+}
+
+.heading-s {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.heading-xs {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.heading-xxs {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 28px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--c-dark-grey);
+}
+
+.body {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
