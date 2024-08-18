@@ -1,0 +1,15 @@
+:root {
+	--c-dark-grey: #303030;
+}
+
+:root[data-day='day'] {
+	--bg-image-desktop: url('../assets/images/desktop/bg-image-daytime.jpg');
+	--bg-image-tablet: url('../assets/images/tablet/bg-image-daytime.jpg');
+	--bg-image-mobile: url('../assets/images/mobile/bg-image-daytime.jpg');
+}
+
+:root[data-day='night'] {
+	--bg-image-desktop: url('../assets/images/desktop/bg-image-nighttime.jpg');
+	--bg-image-tablet: url('../assets/images/tablet/bg-image-nighttime.jpg');
+	--bg-image-mobile: url('../assets/images/mobile/bg-image-nighttime.jpg');
+}
