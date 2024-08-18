@@ -3,21 +3,28 @@
 body {
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
-	color: black;
+	color: white;
 }
 
-.heading-xl {
+.heading-xxl {
 	font-weight: 700;
 	font-size: 200px;
 	line-height: 200px;
 	letter-spacing: -5px;
 }
 
-.heading-l {
+.heading-xl {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 68px;
 	color: var(--c-dark-grey);
+}
+
+.heading-l {
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 28px;
+	letter-spacing: 0px;
 }
 
 .heading-m {
