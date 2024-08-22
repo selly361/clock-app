@@ -1,0 +1,151 @@
+/* Base */
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+/* Utilities */
+@import url('./utilities/variables.css');
+/* Comopnents */
+@import url('./components/button.css');
+
+body {
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+	background-image: var(--bg-image-desktop);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	mix-blend-mode: normal;
+	position: relative;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: -1;
+}
+
+
+button:focus-visible,
+input:focus-visible {
+	outline: 3px dotted var(--c-dark-grey);
+	outline-offset: 3px;
+}
+
+.main {
+	height: 100%;
+	width: 100%;
+	padding: 28px 82.5px 20px 82.5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 1s ease-in-out transform;
+}
+
+
+.main__quote-container {
+	width: 50%;
+}
+
+.main__quote-text-container {
+	margin-bottom: 13px;
+	display: flex;
+	gap: 16px;
+	align-items: start;
+}
+
+.main__quote-text {
+	color: white;
+	width: max-content;
+}
+
+.main__quote-refresh-button {
+	min-height: 17px;
+	min-width: 17px;
+	margin-top: 7px;
+}
+
+.main__quote-author {
+	color: white;
+	font-weight: bold;
+}
+
+.main__time-section {
+	width: 100%;
+	height: max-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.main__time-section__details-container {
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.main__time-section__greeting-container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.abbreviation {
+	margin-left: 11px;
+}
+
+.date-details {
+	min-height: 50vh;
+	width: 100vw;
+	display: flex;
+	padding: 37px 0 37px 82.5px;
+	backdrop-filter: blur(20.3871px);
+	background: rgba(0, 0, 0, 0.75);
+	transition: 1s ease-in-out transform;
+}
+
+.date-details__container {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+
+.date-details__section-one {
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+	max-width: 50%;
+	min-width: 50%;
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.date-details__section-two {
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+	margin-left: 94px;
+}
+
+
+
+.main--active, .date-details--active {
+	transform: translateY(-50vh);
+}
+
+
+
+@media (max-width: 768px) {
+	body {
+		background-image: var(--bg-image-tablet);
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		background-image: var(--bg-image-mobile);
+	}
+}
