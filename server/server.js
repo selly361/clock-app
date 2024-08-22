@@ -38,14 +38,15 @@ app.get('/api/time', async (req, res) => {
 
 app.get('/api/location', async (req, res) => {
 	try {
-		const response = await fetch(
-			`https://api.ipbase.com/v2/info?apikey=${process.env.IPBASE_API_KEY}`
-		)
+		const response = await fetch('http://ip-api.com/json')
+		
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`)
 		}
-		const { data } = await response.json()
-		res.json(data.location)
+		const data = await response.json()
+		
+		res.json({ city: data.city, country: data.country })
+		
 	} catch (error) {
 		console.error('Failed to fetch geolocation data:', error)
 		res.status(500).json({ error: 'Failed to fetch geolocation data' })
