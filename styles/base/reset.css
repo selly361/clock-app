@@ -80,3 +80,14 @@ textarea:not([rows]) {
 :target {
 	scroll-margin-block: 5ex;
 }
+
+/* Reset Button Styles */
+
+button {
+	border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
