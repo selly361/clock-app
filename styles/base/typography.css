@@ -17,7 +17,6 @@ body {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 68px;
-	color: var(--c-dark-grey);
 }
 
 .heading-l {
@@ -55,7 +54,6 @@ body {
 	line-height: 28px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	color: var(--c-dark-grey);
 }
 
 .body {
