@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-day="night" lang="en">
+<html data-day="day" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +9,69 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/main.css" />
 		<script type="module" src="js/index.js" defer></script>
 		<title>Clock App</title>
 	</head>
 	<body>
-		<main>
-			<h1 class="title"></h1>
+		<main class="main">
+			<blockquote class="main__quote-container">
+				<div class="main__quote-text-container">
+					<p class="main__quote-text body">
+						"The only limit to our realization of tomorrow is our doubts of
+						today."
+					</p>
+					<button class="main__quote-refresh-button">
+						<img src="./assets/icons/icon-refresh.svg" alt="Refresh Icon" />
+					</button>
+				</div>
+				<footer class="main__quote-author body">
+					<cite>Franklin D. Roosevelt</cite>
+				</footer>
+			</blockquote>
+			<section class="main__time-section">
+				<div class="main__time-section__details-container">
+					<div class="main__time-section__greeting-container">
+						<img
+							class="main__time-section__icon"
+							src="./assets/icons/icon-sun.svg"
+							alt=""
+						/>
+						<p class="body main__time-section__greeting">
+							GOOD MORNING, IT’S CURRENTLY
+						</p>
+					</div>
+					<h2 class="heading-xxl main__time-section__time">
+						11:37 <span class="heading-l abbreviation">BST</span>
+					</h2>
+					<h3 class="heading-m main__time-section__location">IN LONDON, UK</h3>
+				</div>
+				<button class="button">MORE</button>
+			</section>
 		</main>
-		<div></div>
+
+		<div class="date-details">
+			<div class="date-details__section-one">
+				<div class="date-details__container">
+					<h class="heading-xxs">CURRENT TIMEZONE</h>
+					<p class="heading-xl timezone-value">Europe/London</p>
+				</div>
+				<div class="date-details__container">
+					<h class="heading-xxs">Day of the year</h>
+					<p class="heading-xl day-of-year-value">295</p>
+				</div>
+			</div>
+			<div class="date-details__section-two">
+				<div class="date-details__container">
+					<h class="heading-xxs">Day of the week</h>
+					<p class="heading-xl day-of-week-value">5</p>
+				</div>
+				<div class="date-details__container">
+					<h class="heading-xxs">Week number</h>
+					<p class="heading-xl week-number-value">42</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
