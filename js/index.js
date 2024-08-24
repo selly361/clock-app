@@ -22,9 +22,9 @@
 	const htmlElement = document.documentElement
 
 	// URLs for the endpoints on your server
-	const serverTimeApiUrl = 'http://localhost:3000/api/time'
-	const serverGeoApiUrl = 'http://localhost:3000/api/location'
-	const serverQuotesApiUrl = 'http://localhost:3000/api/quote'
+	const TIME_API_URL = 'https://clock-app-3o15.onrender.com/api/time'
+	const GEO_API_URL = 'https://clock-app-3o15.onrender.com/api/location'
+	const QUOTES_API_URL = 'https://clock-app-3o15.onrender.com/api/quote'
 
 	/* ========================================
 	   Methods
@@ -33,21 +33,21 @@
 	/*  Fetch the current time from your server. */
 
 	async function timeApi() {
-		const response = await fetch(serverTimeApiUrl)
+		const response = await fetch(TIME_API_URL)
 		return response.json()
 	}
 
 	/* Fetch the geolocation data from your server. */
 
 	async function geoApi() {
-		const response = await fetch(serverGeoApiUrl)
+		const response = await fetch(GEO_API_URL)
 		return response.json()
 	}
 
 	/* Fetch a random quote from your server. */
 
 	async function fetchQuote() {
-		const response = await fetch(serverQuotesApiUrl)
+		const response = await fetch(QUOTES_API_URL)
 		return response.json()
 	}
 
