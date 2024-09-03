@@ -3,39 +3,41 @@
 	min-width: 146px;
 	border-radius: 28px;
 	background: #ffffff;
-    padding-left: 21px;
-    text-align: left;
+	padding-left: 21px;
+	text-align: left;
 
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 28px;
 	color: rgba(0, 0, 0, 0.5);
 
-    position: relative;
-}
-
-.button:hover::before {
-    background-color: #999999;
+	position: relative;
 }
 
 .button::before {
-    content: '';
-    position: absolute;
-    right: 9px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+	content: '';
+	position: absolute;
+	right: 9px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
 
-    background-color: var(--c-dark-grey);
-    background-image: url("/assets/icons/icon-arrow-down.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform .5s linear, .5s linear background-color;
+	background-color: var(--c-dark-grey);
+	background-image: url('/assets/icons/icon-arrow-down.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: transform 0.5s linear, 0.5s linear background-color;
 }
 
 .button--active::before {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+@media (hover: hover) {
+	.button:hover::before {
+		background-color: #999999;
+	}
 }
